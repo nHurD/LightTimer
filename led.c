@@ -3,7 +3,7 @@
 
 /* Set Delay in Milisecionds: 12 hours -> 43200000 */
 enum {
-  BLINK_DELAY_MS = 43200000,
+  BLINK_DELAY_MS = 4320000UL,
 };
 
 int main (void) {
