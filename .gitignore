@@ -1,1 +1,4 @@
 *.xcodeproj/*
+.dep/*
+led.*
+!led.c
