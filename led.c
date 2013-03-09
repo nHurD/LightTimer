@@ -7,18 +7,15 @@ enum {
 };
 
 int main (void) {
-    /* set pin 5 of PORTB for output*/
-    DDRC |= _BV(DDC7);
+    /* set pin 2 of PORTD for output.*/
     DDRD |= _BV(DDD1);
 
     while(1) {
-        /* set pin 5 high to turn led on */
-        PORTC |= _BV(PORTC7);
+        /* set pin high to turn light on */
         PORTD |= _BV(PORTD1);
         _delay_ms(BLINK_DELAY_MS);
 
-        /* set pin 5 low to turn led off */
-        PORTC &= ~_BV(PORTC7);
+        /* set pin low to turn light off */
         PORTD &= ~_BV(PORTD1);
         _delay_ms(BLINK_DELAY_MS);
     }
